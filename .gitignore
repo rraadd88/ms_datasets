@@ -1,0 +1,32 @@
+# !.gitignore
+*.ipynb
+*.py
+*.pyc
+*.ipynb_checkpoints
+
+*.bt2
+*.logbt2bld
+*.log
+*.xml
+*_prt.fasta
+*_blastp*fasta
+*.~lock*
+
+analysis/dms2dfe_dependencies/*
+
+# analysis/Firnberg_et_al_2014/cfg/info
+# analysis/Olson_et_al_2014/cfg/info
+# analysis/Melnikov_et_al_2014/cfg/info
+
+analysis/Firnberg_et_al_2014/data_*
+analysis/Firnberg_et_al_2014/plots
+!analysis/Firnberg_et_al_2014/data_lbl
+
+analysis/Olson_et_al_2014/data_*
+analysis/Olson_et_al_2014/plots
+!analysis/Olson_et_al_2014/data_lbl
+
+analysis/Melnikov_et_al_2014/data_*
+analysis/Melnikov_et_al_2014/plots
+!analysis/Melnikov_et_al_2014/data_mutmat
+!analysis/Melnikov_et_al_2014/data_input

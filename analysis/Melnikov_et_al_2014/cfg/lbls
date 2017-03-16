@@ -1,0 +1,9 @@
+varname,fhs_1,fhs_2
+KKA2_S1_Kan14_L1,data_input/SRR1292881_1.fastq,data_input/SRR1292881_2.fastq
+KKA2_S2_Kan14_L2,data_input/SRR1292907_1.fastq,data_input/SRR1292907_2.fastq
+KKA2_S3_Kan14_L1,data_input/SRR1293150_1.fastq,data_input/SRR1293150_2.fastq
+KKA2_Bkg1,data_input/SRR1292901_1.fastq,data_input/SRR1292901_2.fastq
+KKA2_Bkg2,data_input/SRR1293147_1.fastq,data_input/SRR1293147_2.fastq
+KKA2_S1_Kan11_L1,data_input/SRR1292709_1.fastq,data_input/SRR1292709_2.fastq
+KKA2_S2_Kan11_L2,data_input/SRR1292902_1.fastq,data_input/SRR1292902_2.fastq
+KKA2_S3_Kan11_L1,data_input/SRR1293148_1.fastq,data_input/SRR1293148_2.fastq
