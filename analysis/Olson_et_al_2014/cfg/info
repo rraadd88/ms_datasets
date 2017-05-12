@@ -5,7 +5,7 @@ Q_cutoff,,30,,Lower cut off for Phred score quality
 transform_type,log,log,[log: log2  |  plog: log2 with pseudocount | rlog: regularised log2 (needs deseq)| vst: variance stabilizing transformation (needs DESeq2)],Type of transformation of frequecies of mutants
 norm_type,none,none,[MLE: wrt MLE of synonymous mutations | GLM: by generalized linear modelling (needs DESeq2) | none : use raw fold changes],Type of normalization of fold changes
 alignment_type,,loc,[loc:local | glob:global],Alignment type
-cores,1,2,,Number of cores to be used
+cores,4,2,,Number of cores to be used
 clips,,,,Optional: Clip upstream UPTO and downstream FROM codons (space delimited) rg. 10<SPACE>167
 fsta_fh,Olson_et_al_2014/GB1.fasta,,,Optional: Path to reference fasta file
 pdb_fh,Olson_et_al_2014/1pga.pdb,,,Optional: Path to pdb file
@@ -21,7 +21,7 @@ clustalo_fh,dms2dfe_dependencies/clustalo-1.2.2-Ubuntu-x86_64,,,Optional: path t
 msms_fh,dms2dfe_dependencies/msms/msms.x86_64Linux2.2.6.1,,,Optional: path to MSMS source file (for calculation of residue depths)
 rate4site_fh,dms2dfe_dependencies/rate4site/rate4site-3.0.0/src/rate4site/rate4site,,,Optional: path to rate4site source file (for calculation of conservation scores)
 rscript_fh,/usr/bin/Rscript,,,Optional: path to Rscript (for use of Deseq2)
-prj_dh,Olson_et_al_2014,,,
+prj_dh,/home/kclabws1/Documents/propro/writ/prjs/1_dms_software/data/datasets/ms_datasets/analysis/Olson_et_al_2014,,,
 fsta_id,GB1,,,
 fsta_seq,TAACAGTATAAACTGATTCTGAACGGCAAAACCCTGAAAGGCGAAACCACCACCGAAGCGGTGGATGCGGCGACCGCGGAAAAAGTGTTTAAACAGTATGCGAACGATAACGGCGTGGATGGCGAATGGACCTATGATGATGCGACCAAAACCTTTACCGTGACCGAA,,,
 fsta_len,168,,,
