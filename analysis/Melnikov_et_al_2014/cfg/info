@@ -5,9 +5,10 @@ Q_cutoff,,30,,Lower cut off for Phred score quality
 transform_type,log,,[log: log2  |  plog: log2 with pseudocount | rlog: regularised log2 (needs deseq)| vst: variance stabilizing transformation (needs DESeq2)],Type of transformation of frequecies of mutants
 norm_type,GLM,,[MLE: wrt MLE of synonymous mutations | GLM: by generalized linear modelling (needs DESeq2) | none : use raw fold changes],Type of normalization of fold changes
 alignment_type,,loc,[loc:local | glob:global],Alignment type
-cores,1,4,,Number of cores to be used
+cores,8,4,,Number of cores to be used
 clips,,,,Optional: Clip upstream UPTO and downstream FROM codons (space delimited) rg. 10<SPACE>167
 mut_subset,,N,[N: Non-synonymous | S: Synonymous | A: All],Optional: Subset of mutations to be used for down-stream analysis
+ml_input,,Fi,[FC: Preferential enrichments| Fi: Fitness scores ],
 fsta_fh,Melnikov_et_al_2014/aph_wt_nt_cctmr_cctmr1.fasta,found in project directory,,Optional: Path to reference fasta file
 pdb_fh,Melnikov_et_al_2014/1ND4.pdb,found in project directory,,Optional: Path to pdb file
 active_sites,190 195 208,,,Optional: residue numbers of active sites (space delimited) eg. 68<SPACE>192

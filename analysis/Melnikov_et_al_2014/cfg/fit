@@ -1,2 +1,7 @@
-unsel,sel_1,sel_2,sel_3
-Bkg,Kan14,Kan11,
+unsel,sel_1,sel_2,sel_3,sel_4,sel_5,sel_6,sel_7,sel_8,sel_9
+Background_0,Amikacin_1_1_MIC,Amikacin_1_16_MIC,Amikacin_1_2_MIC,Amikacin_1_32_MIC,Amikacin_1_4_MIC,Amikacin_1_8_MIC,,,
+Background_0,G418_1_1_MIC,G418_1_2_MIC,G418_1_4_MIC,G418_1_8_MIC,,,,,
+Background_0,Kanamycin_1_1_MIC,Kanamycin_1_2_MIC,Kanamycin_1_4_MIC,Kanamycin_1_8_MIC,,,,,
+Background_0,Neomycin_1_1_MIC,Neomycin_1_2_MIC,Neomycin_1_4_MIC,Neomycin_1_8_MIC,,,,,
+Background_0,Paromomycin_1_1_MIC,Paromomycin_1_2_MIC,Paromomycin_1_4_MIC,Paromomycin_1_8_MIC,,,,,
+Background_0,Ribostamycin_1_1_MIC,Ribostamycin_1_2_MIC,Ribostamycin_1_4_MIC,Ribostamycin_1_8_MIC,,,,,

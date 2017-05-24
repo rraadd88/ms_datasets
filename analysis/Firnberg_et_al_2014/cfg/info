@@ -7,6 +7,8 @@ norm_type,none,none,[MLE: wrt MLE of synonymous mutations | GLM: by generalized 
 alignment_type,,loc,[loc:local | glob:global],Alignment type
 cores,1,2,,Number of cores to be used
 clips,,,,Optional: Clip upstream UPTO and downstream FROM codons (space delimited) rg. 10<SPACE>167
+mut_subset,,N,[N: Non-synonymous | S: Synonymous | A: All],Optional: Subset of mutations to be used for down-stream analysis
+ml_input,,Fi,[FC: Preferential enrichments| Fi: Fitness scores ],
 fsta_fh,Firnberg_et_al_2014/btem.fasta,found in project directory,,Optional: Path to reference fasta file
 pdb_fh,Firnberg_et_al_2014/btem.pdb,found in project directory,,Optional: Path to pdb file
 active_sites,68 166,,,Optional: residue numbers of active sites (space delimited) eg. 68<SPACE>192
@@ -21,7 +23,7 @@ clustalo_fh,dms2dfe_dependencies/clustalo-1.2.2-Ubuntu-x86_64,,,Optional: path t
 msms_fh,dms2dfe_dependencies/msms/msms.x86_64Linux2.2.6.1,,,Optional: path to MSMS source file (for calculation of residue depths)
 rate4site_fh,dms2dfe_dependencies/rate4site/rate4site-3.0.0/src/rate4site/rate4site,,,Optional: path to rate4site source file (for calculation of conservation scores)
 rscript_fh,/usr/bin/Rscript,,,Optional: path to Rscript (for use of Deseq2)
-prj_dh,Firnberg_et_al_2014,,,
+prj_dh,/home/kclabws1/Documents/propro/writ/prjs/1_dms_software/data/datasets/ms_datasets/analysis/Firnberg_et_al_2014,,,
 fsta_id,btem,,,
 fsta_seq,TAATAAATGAGTATTCAACATTTCCGTGTCGCCCTTATTCCCTTTTTTGCGGCATTTTGCCTTCCTGTTTTTGCTCACCCAGAAACGCTGGTGAAAGTAAAAGATGCTGAAGATCAGTTGGGTGCACGAGTGGGTTACATCGAACTGGATCTCAACAGCGGTAAGATCCTTGAGAGTTTTCGCCCCGAAGAACGTTTTCCAATGATGAGCACTTTTAAAGTTCTGCTATGTGGCGCGGTATTATCCCGTGTTGACGCCGGGCAAGAGCAACTCGGTCGCCGCATACACTATTCTCAGAATGACTTGGTTGAGTACTCACCAGTCACAGAAAAGCATCTTACGGATGGCATGACAGTAAGAGAATTATGCAGTGCTGCCATAACCATGAGTGATAACACTGCGGCCAACTTACTTCTGACAACGATCGGAGGACCGAAGGAGCTAACCGCTTTTTTGCACAACATGGGGGATCATGTAACTCGCCTTGATCGTTGGGAACCGGAGCTGAATGAAGCCATACCAAACGACGAGCGTGACACCACGATGCCTGCAGCAATGGCAACAACGTTGCGCAAACTATTAACTGGCGAACTACTTACTCTAGCTTCCCGGCAACAATTAATAGACTGGATGGAGGCGGATAAAGTTGCAGGACCACTTCTGCGCTCGGCCCTTCCGGCTGGCTGGTTTATTGCTGATAAATCTGGAGCCGGTGAGCGTGGGTCTCGCGGTATCATTGCAGCACTGGGGCCAGATGGTAAGCCCTCCCGTATCGTAGTTATCTACACGACGGGGAGTCAGGCAACTATGGATGAACGAAATAGACAGATCGCTGAGATAGGTGCCTCACTGATTAAGCATTGGTAA,,,
 fsta_len,867,,,

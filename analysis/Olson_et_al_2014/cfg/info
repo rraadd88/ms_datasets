@@ -7,6 +7,8 @@ norm_type,none,none,[MLE: wrt MLE of synonymous mutations | GLM: by generalized 
 alignment_type,,loc,[loc:local | glob:global],Alignment type
 cores,4,2,,Number of cores to be used
 clips,,,,Optional: Clip upstream UPTO and downstream FROM codons (space delimited) rg. 10<SPACE>167
+mut_subset,,N,[N: Non-synonymous | S: Synonymous | A: All],Optional: Subset of mutations to be used for down-stream analysis
+ml_input,,Fi,[FC: Preferential enrichments| Fi: Fitness scores ],
 fsta_fh,Olson_et_al_2014/GB1.fasta,,,Optional: Path to reference fasta file
 pdb_fh,Olson_et_al_2014/1pga.pdb,,,Optional: Path to pdb file
 active_sites,,,,Optional: residue numbers of active sites (space delimited) eg. 68<SPACE>192
