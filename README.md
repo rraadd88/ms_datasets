@@ -10,7 +10,7 @@ Datasets of mutational scanning for testing dms2dfe.
 
 3. Melnikov_et_al_2014 
     Input data: fastq
-    Note: for analyzing this dataset, first download the input data using `get_seq_data.py` script located in `analysis` folder.
+    Note: for analyzing this dataset, first download the input data (~300Mb) using `get_seq_data.py` script located in `analysis` folder.
         Usage: `get_seq_data.py Melnikov_et_al_2014`
         fastq files would be downloaded from DDBJ into folder `Melnikov_et_al_2014/data_input`. 
 
