@@ -2,29 +2,36 @@
 
 Datasets of mutational scanning for testing dms2dfe.
 
-1. Olson_et_al_2014
-    Input data: amino acid level mutation counts
+## 1. Olson_et_al_2014
+    
+data type : amino acid level mutation counts
 
-2. Firnberg_et_al_2014  
-    Input data: codon level mutation counts
+## 2. Firnberg_et_al_2014  
+    
+data type : codon level mutation counts
 
-3. Melnikov_et_al_2014 
-    Input data: fastq
-    Note: for analyzing this dataset, first download the input data (~300Mb) using `get_seq_data.py` script located in `analysis` folder.
-        Usage: `get_seq_data.py Melnikov_et_al_2014`
-        fastq files would be downloaded from DDBJ into folder `Melnikov_et_al_2014/data_input`. 
+## 3. Melnikov_et_al_2014 
+    
+data type : fastq
 
 # Downloading datasets
 
-Exaple datasets can be downloaded from the latest release from https://github.com/rraadd88/ms_datasets/releases .
-In the folder `ms_dataset`, directory `outputs` contains pre-analysed outputs for validation of run while directory `analysis` can be used to test/analyze different datasets as follows. 
+Exaple datasets are hosted at https://github.com/rraadd88/ms_datasets . 
+In the downloaded folder `ms_dataset`, directory `analysis` is to be used to analyze different datasets as follows. 
 
-# Run dms2dfe
+.. code-block:: text
 
+    git clone https://github.com/rraadd88/ms_datasets.git
     cd ms_dataset/analysis
     dms2dfe <project directory>
 
 Here, '<project directory>' can be `Firnberg_et_al_2014`, `Melnikov_et_al_2014` or `Olson_et_al_2014`
+
+Note: dataset `Melnikov_et_al_2014` would need sequencing data to be dowloaded from SRA. A script named `get_seq_data.py` (located at `ms_datasets/analysis`) would download the `fastq` files (~300Mb) in `Melnikov_et_al_2014/data_input` folder. 
+
+.. code-block:: text
+
+    get_seq_data.py Melnikov_et_al_2014
 
 # Outputs
 
