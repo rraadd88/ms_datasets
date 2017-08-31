@@ -8,6 +8,7 @@
 *.logbt2bld
 *.log
 *.xml
+*_info
 *_prt.fasta
 *_blastp*fasta
 *.~lock*

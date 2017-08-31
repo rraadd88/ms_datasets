@@ -18,7 +18,7 @@ bowtie2_com,,,,Optional: additional commands to pass to bowtie2
 dssp_fh,dms2dfe_dependencies/dssp-2.0.4-linux-amd64,,,Optional: path to dssp module (dependencies)
 trimmomatic_fh,dms2dfe_dependencies/Trimmomatic-0.33/trimmomatic-0.33.jar,,,Optional: path to trimmomatic source (.jar) file (dependencies)
 bowtie2_fh,dms2dfe_dependencies/bowtie2-2.2.1/bowtie2,,,Optional: path to bowtie2 source file
-samtools_fh,dms2dfe_dependencies/samtools-0.1.18/samtools,,,Optional: path to samtools source file
+samtools_fh,dms2dfe_dependencies/samtools-0.1.20/samtools,,,Optional: path to samtools source file
 clustalo_fh,dms2dfe_dependencies/clustalo-1.2.2-Ubuntu-x86_64,,,Optional: path to clustal omega source file
 msms_fh,dms2dfe_dependencies/msms/msms.x86_64Linux2.2.6.1,,,Optional: path to MSMS source file (for calculation of residue depths)
 rate4site_fh,dms2dfe_dependencies/rate4site/rate4site-3.0.0/src/rate4site/rate4site,,,Optional: path to rate4site source file (for calculation of conservation scores)
