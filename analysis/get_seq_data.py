@@ -21,8 +21,13 @@ def get_seq_data(data_input_dh,data_input_fns):
         if not exists('%s.bz2' % data_input_fh):
             logging.info("downloading: %s [%d/%d]" % (basename(data_input_fh),data_input_fns.index(data_input_fn)+1,len(data_input_fns)))
             com="wget -q ftp://ftp.ddbj.nig.ac.jp/ddbj_database/dra/fastq/SRA082/SRA082074/%s.bz2 --directory-prefix=%s" % (data_input_fn,data_input_dh)
-            # print com
-            subprocess.call(com,shell=True,stdout=log_f, stderr=subprocess.STDOUT)
+            sub_call_err=subprocess.call(com,shell=True,stdout=log_f, stderr=subprocess.STDOUT)
+            if sub_call_err!=0:
+                #ENA: eg. ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR129/001/SRR1292901/SRR1292901_1.fastq.gz
+                data_input_fn=data_input_fn.split('/')[1]
+                com="wget -q ftp://ftp.sra.ebi.ac.uk/vol1/fastq/%s/001/%s/%s.gz --directory-prefix=%s" % (data_input_fn[:6],data_input_fn[:10],data_input_fn,data_input_dh)
+                logging.info('bash command: $ %s' % com)
+                subprocess.call(com,shell=True,stdout=log_f, stderr=subprocess.STDOUT)
     subprocess.call("bzip2 -d %s/*.bz2" % data_input_dh ,shell=True,stdout=log_f, stderr=subprocess.STDOUT)
     log_f.close()
     
