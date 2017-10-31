@@ -37,3 +37,6 @@ analysis/Melnikov_et_al_2014/plots
 !analysis/Melnikov_et_al_2014/data_input
 
 analysis/test.csv
+analysis/Melnikov_et_al_2014/data_input/
+analysis/Melnikov_et_al_2014/data_mutmat/
+*.fai
