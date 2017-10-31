@@ -3,6 +3,8 @@
 *.py
 *.pyc
 *.ipynb_checkpoints
+*.png
+*.csv
 
 *.bt2
 *.logbt2bld
@@ -19,6 +21,8 @@ analysis/dms2dfe_dependencies/*
 # analysis/Olson_et_al_2014/cfg/info
 # analysis/Melnikov_et_al_2014/cfg/info
 
+*/data_input/*
+*/data_mutmat/*
 analysis/Firnberg_et_al_2014/data_*
 analysis/Firnberg_et_al_2014/plots
 !analysis/Firnberg_et_al_2014/data_lbl
