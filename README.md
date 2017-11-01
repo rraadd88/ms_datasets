@@ -37,6 +37,29 @@ Note: dataset `Melnikov_et_al_2014` would need sequencing data to be dowloaded f
 
 The outputs of the run can be vaidated with those kept in 'ms_datasets/outputs'.
 
+# Steps to analyze datasets
+
+```
+# create conda environment
+wget https://raw.githubusercontent.com/rraadd88/dms2dfe/master/environment.yml
+conda env create -f environment.yml
+source activate dms2dfe
+
+# install the package
+pip install dms2dfe
+
+# download the datasets
+git clone https://github.com/rraadd88/ms_datasets.git
+
+# analyze the datasets
+cd ms_datasets/analysis
+dms2dfe Olson_et_al_2014
+dms2dfe Firnberg_et_al_2014
+# download input sequencing data (~300Mb)
+python get_seq_data.py Melnikov_et_al_2014
+dms2dfe Melnikov_et_al_2014
+```
+
 # Citations
 
 .. [Melnikov_et_al_2014] Melnikov, A., P. Rogov, L. Wang, A. Gnirke, and T.S. Mikkelsen. 2014. Comprehensive mutational scanning of a kinase in vivo reveals substrate-dependent fitness landscapes. Nucleic Acids Research. 42: 1–8.
