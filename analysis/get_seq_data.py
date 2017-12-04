@@ -14,7 +14,7 @@ logger.setLevel(logging.DEBUG)
 def get_seq_data(data_input_dh,data_input_fns):
     if not exists(data_input_dh):
         makedirs(data_input_dh)
-    log_fh="%s.get_seq_data.log" % data_input_dh
+    log_fh="%s/get_seq_data.log" % data_input_dh
     log_f = open(log_fh,'a')
     for data_input_fn in data_input_fns:
         data_input_fh="%s/%s" % (data_input_dh,basename(data_input_fn))
@@ -23,7 +23,7 @@ def get_seq_data(data_input_dh,data_input_fns):
                 logging.info("downloading: %s [%d/%d]" % (basename(data_input_fh),data_input_fns.index(data_input_fn)+1,len(data_input_fns)))
                 com="wget -q ftp://ftp.ddbj.nig.ac.jp/ddbj_database/dra/fastq/SRA082/SRA082074/%s.bz2 --directory-prefix=%s" % (data_input_fn,data_input_dh)
                 sub_call_err=subprocess.call(com,shell=True,stdout=log_f, stderr=subprocess.STDOUT)
-                subprocess.call("bzip2 %s/%s.bz2" % (data_input_dh,data_input_fn.split('/')[1]) ,shell=True,stdout=log_f, stderr=subprocess.STDOUT)
+                subprocess.call("bzip2 -d %s/%s.bz2" % (data_input_dh,data_input_fn.split('/')[1]) ,shell=True,stdout=log_f, stderr=subprocess.STDOUT)
                 if sub_call_err!=0:
                     if not exists('%s.gz' % data_input_fh):                    
                         logging.warning('DDBJ not working, trying ENA')
@@ -35,6 +35,7 @@ def get_seq_data(data_input_dh,data_input_fns):
                         sub_call_err=subprocess.call("gunzip %s/%s.gz" % (data_input_dh,data_input_fn) ,shell=True,stdout=log_f, stderr=subprocess.STDOUT)
                         if sub_call_err!=0:
                             logging.warning('ENA too not working')
+#        break
     log_f.close()
     
 # prj_dh=raw_input("Get input data for dataset [project_directory eg. Melnikov_et_al_2014]:")
